@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: black;
+  flex-wrap: wrap; /* Allows wrapping of child elements */
+}
+.home-content {
+  flex: 1 1 300px; /* Adjusts basis and allows flexibility */
+  text-align: center; /* Center text in home-content */
+}
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+span {
+  color: green;
+}
+
+.home-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+}
+
+.home-img {
+  border-radius: 50%;
+  flex: 1 1 300px; /* Adjusts basis and allows flexibility */
+  display: flex;
+  justify-content: center;
+}
+
+.home-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px solid green;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.home-img img:hover {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid green;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: green;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.3) translateY(-5px);
+  background-color: green;
+  box-shadow: 0 0 25px green;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: black;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: green;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid green;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale3d(1.03);
+  background-color: green;
+  color: black;
+  box-shadow: 0 0 25px green;
+}
+
+.typing-text {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span {
+  position: relative;
+}
+
+.typing-text span::before {
+  content: "software Developer";
+  color: green;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid green;
+  }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Web Developer";
+  }
+  21%, 40% {
+    content: "App Designer";
+  }
+  41%, 60% {
+    content: "Web Designer";
+  }
+  61%, 80% {
+    content: "Software Tester";
+  }
+  81%, 100% {
+    content: "Coder";
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    gap: 4rem;
+  }
+}
+
+@media(max-width:995px) {
+  .home {
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }
+
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+}
+
+
+/* Common styling for all sections */
+section {
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+  }
+  
+  /* Individual section styles */
+  .skills, .education, .experience, .contact {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .skills h2, .education h2, .experience h2, .contact h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: green;
+    margin-bottom: 2rem;
+  }
+  
+  /* Paragraph styles */
+  .skills p, .education p, .experience p, .contact p {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  /* Add some spacing between sections */
+  .skills, .education, .experience, .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 1000px) {
+    .skills h2, .education h2, .experience h2, .contact h2 {
+      font-size: 3rem;
+    }
+  
+    .skills p, .education p, .experience p, .contact p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .skills, .education, .experience, .contact {
+      padding: 3rem 5%;
+    }
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 2rem 0;
+    display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  justify-content: center; /* Centers the items */
+  }
+  
+  .skills ul li {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    flex: 1 1 200px; /* Adjusts basis and allows flexibility */
+  margin: 1rem;
+  text-align: center;
+  }
+  
+  .skills ul li::before {
+    content: "✔️";
+    color: green;
+    margin-right: 1rem;
+  }
+
+  .education ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 2rem 0;
+  }
+  
+  .education ul li {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .education ul li::before {
+    content: "🎓";
+    color: green;
+    margin-right: 1rem;
+  }
+
+  .contact ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 2rem 0;
+  }
+  
+  .contact ul li {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .contact ul li a {
+    color: green;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .contact ul li a:hover {
+    color: white;
+  }
+
+  .experience-item {
+    margin-bottom: 3rem;
+  }
+  
+  .experience-item h3 {
+    font-size: 2.4rem;
+    color: green;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-item p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
