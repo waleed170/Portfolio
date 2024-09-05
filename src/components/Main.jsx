@@ -59,15 +59,22 @@ const Main = () => {
 <section id="experience" className="experience">
   <h2>Experience</h2>
   <div className="experience-item">
-    <h3>Software Engineer</h3>
-    <p>Fa21 2021 - Present</p>
-    <p>Developed and maintained web applications using React and Node.js. Collaborated with cross-functional teams to design, build, and deploy scalable software solutions.</p>
+    <h3>Frontend Developer Trainee at Social Swirl</h3>
+    <p>Aug 2024</p>
+    <p><ul>
+      <li>
+      1. Completed an intensive 7-day bootcamp focused on HTML, CSS, JavaScript, React, Tailwind, Flowbite.
+      </li>
+      <li>
+      2. Worked on assignments and developed minor projects as well as 1 major project.
+      </li>
+      <li>
+      3. Gained hands-on experience in Frontend web development, react routing, Flex.
+      </li>
+      </ul>  
+      </p>
   </div>
-  <div className="experience-item">
-    <h3>Frontend Developer at SS</h3>
-    <p>July 2020 - May 2022</p>
-    <p>Worked on improving the user experience and interface of various web applications. Led the development of responsive and accessible UI components using HTML, CSS, and JavaScript.</p>
-  </div>
+  
 </section>
 
 
