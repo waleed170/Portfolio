@@ -36,7 +36,7 @@ const Main = () => {
   <h2>Skills</h2>
   <p>I have a diverse set of skills, ranging from design to development:</p>
   <ul>
-    <li>Proficient in HTML, CSS, and JavaScript</li>
+    <li>Proficient in HTML, CSS, JavaScript and C++</li>
     <li>Experienced with React, Tailwind and Flowbite</li>
     <li>Strong understanding of responsive web design</li>
     <li>Familiar with backend development using Node.js and Python</li>
@@ -80,7 +80,7 @@ const Main = () => {
 
       <section id="contact" className="contact">
   <h2>Contact</h2>
-  <p>If you'd like to reach out to me, feel free to contact me through the following:</p>
+  <p>If you'd like to reach out to me, feel free to contact and learn more about me through the following:</p>
   <ul>
     <li>Email: waleedmonim18@gmail.com</li>
     <li>LinkedIn: <a href="https://www.linkedin.com/in/waleed-monim/">www.linkedin.com/in/waleed-monim</a></li>
