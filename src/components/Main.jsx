@@ -39,7 +39,7 @@ const Main = () => {
     <li>Proficient in HTML, CSS, JavaScript and C++</li>
     <li>Experienced with React, Tailwind and Flowbite</li>
     <li>Strong understanding of responsive web design</li>
-    <li>Familiar with backend development using Node.js and Python</li>
+    <li>Familiar with backend development using Python</li>
     <li>Database management with SQL</li>
     <li>Version control using Git and GitHub</li>
   </ul>
